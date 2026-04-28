@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 520px;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.progresso {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-tarefa {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.input-tarefa:focus {
+  border-color: #667eea;
+}
+
+.btn-adicionar {
+  padding: 0.75rem 1.25rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-adicionar:hover {
+  background: #5a67d8;
+}
+
+.btn-adicionar:active {
+  transform: scale(0.97);
+}
+
+.lista-tarefas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-tarefa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: #f7fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  transition: background 0.2s;
+}
+
+.item-tarefa:hover {
+  background: #edf2f7;
+}
+
+.item-tarefa.concluida .texto-tarefa {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.texto-tarefa {
+  flex: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #2d3748;
+  user-select: none;
+}
+
+.btn-remover {
+  background: transparent;
+  border: none;
+  color: #fc8181;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 0.5rem;
+}
+
+.btn-remover:hover {
+  background: #fff5f5;
+  color: #e53e3e;
+}
+
+.lista-vazia {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 0.95rem;
+  padding: 1.5rem;
+}
